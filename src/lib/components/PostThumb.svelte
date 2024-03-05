@@ -28,7 +28,7 @@
 	}
 </script>
 
-<div class="grid w-full grid-cols-4 gap-4 py-8">
+<div class="flex w-full flex-col gap-4 py-8 lg:grid lg:grid-cols-4">
 	<img src={post.feature_image} alt="" />
 	<div class="col-span-3 flex flex-col gap-3">
 		<h3 class="text-lg font-semibold">{post.title}</h3>

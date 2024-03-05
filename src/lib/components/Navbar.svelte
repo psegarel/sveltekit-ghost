@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PostOrPage, PostsOrPages } from '@tryghost/content-api';
+	import type { PostOrPage } from '@tryghost/content-api';
 	import type { PageData } from '../../routes/$types';
 
 	export let data: PageData;
@@ -11,15 +11,14 @@
 </script>
 
 <div class="flex h-28 w-screen flex-row items-center p-4 lg:px-48">
-	<div class="w-1/3">
+	<div class="hidden w-1/3 lg:block">
 		<ul class="flex flex-row items-center gap-8">
 			{#each pages as item}
-				<li><a class="capitalize" href={item.url}>{item.name}</a></li>
+				<li><a class="capitalize text-zinc-900 no-underline" href={item.url}>{item.name}</a></li>
 			{/each}
 		</ul>
 	</div>
-	<div class="flex w-1/3 flex-row items-center justify-center text-2xl font-semibold">
+	<div class="flex w-full flex-row items-center justify-center text-2xl font-semibold lg:w-1/3">
 		{settings.title}
 	</div>
-	<!-- <div class="w-1/3 text-2xl font-semibold"></div> -->
 </div>
