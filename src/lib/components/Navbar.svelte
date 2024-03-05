@@ -14,7 +14,11 @@
 	<div class="hidden w-1/3 lg:block">
 		<ul class="flex flex-row items-center gap-8">
 			{#each pages as item}
-				<li><a class="capitalize text-zinc-900 no-underline" href={item.url}>{item.name}</a></li>
+				<li>
+					<a class="font-semibold capitalize text-zinc-900 no-underline" href={item.url}
+						>{item.name}</a
+					>
+				</li>
 			{/each}
 		</ul>
 	</div>
