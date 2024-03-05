@@ -25,7 +25,7 @@
 	}
 </script>
 
-<div class="absolute right-4 top-4 z-40">
+<div class="absolute right-4 top-4 z-40 lg:hidden">
 	<button on:click={toggleVisible}>
 		<Burger />
 	</button>
