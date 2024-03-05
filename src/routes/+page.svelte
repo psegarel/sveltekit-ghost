@@ -4,6 +4,16 @@
 	export let data: PageData;
 
 	import Hero from '$lib/components/Hero.svelte';
+	import PostThumb from '$lib/components/PostThumb.svelte';
 </script>
 
 <Hero settings={data.settings} />
+<div class="flex w-screen flex-row items-center justify-center p-4">
+	<div class="w-2/4 py-8">
+		<h3 class="border-b pb-3 text-sm font-light uppercase">Latest</h3>
+
+		{#each data.posts as post}
+			<PostThumb {post} />
+		{/each}
+	</div>
+</div>

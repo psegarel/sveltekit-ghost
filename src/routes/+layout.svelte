@@ -4,7 +4,8 @@
 	import '../app.pcss';
 
 	export let data: PageData;
+	console.log(data.pages);
 </script>
 
-<Navbar settings={data.settings} />
+<Navbar {data} />
 <slot />
