@@ -4,7 +4,6 @@
 	import '../app.pcss';
 
 	export let data: PageData;
-	console.log(data.pages);
 </script>
 
 <Navbar {data} />
