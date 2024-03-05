@@ -1,38 +1,16 @@
 # create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A Svelte project starter, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte) and [Ghost](https://ghost.org/) as a headless CMS
 
-## Creating a project
+## Start for free with [DigitalPress](https://www.digitalpress.blog/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+You will need to add the necessary API Keys in order for SvelteKit to communicate with Ghost
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Check the docs [Ghost Content API](https://ghost.org/docs/content-api/)
+Obtain the Content API URL and key by creating a new Custom Integration under the Integrations screen in Ghost Admin.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Add the keys to a .env file:
+VITE_GHOST_API_URL=[API URL]
+VITE_GHOST_CONTENT_API_KEY=[Content API Key]
+VITE_SECRET_GHOST_ADMIN_API_KEY=[Admin API Key]
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
