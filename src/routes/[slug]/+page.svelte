@@ -11,21 +11,21 @@
 
 {#if post}
 	<div class="flex min-h-screen w-screen flex-col items-center justify-center">
-		<div class="flex w-3/5 flex-col gap-8 py-32">
+		<div class="flex flex-col gap-8 p-4 py-32 lg:w-3/5">
 			<h1 class="text-xl font-bold lg:text-4xl">{post.title}</h1>
 			<div class="flex flex-row gap-4">
 				<User classname="w-12 h-12 border rounded-full bg-zinc-200 text-white p-1" />
 				<div>
 					{#if post.authors}
-						<h4 class="text-xl font-semibold">{post.authors[0].name}</h4>
+						<h4 class="text-sm font-semibold lg:text-xl">{post.authors[0].name}</h4>
 					{/if}
 					{#if post.created_at}
-						<div class="text-sm text-zinc-500">{formatDate(post.created_at)}</div>
+						<div class="text-xs text-zinc-500 lg:text-sm">{formatDate(post.created_at)}</div>
 					{/if}
 				</div>
 			</div>
 			<img src={post?.feature_image} alt={post.title} />
-			<div class="text-lg font-light">{@html post.html}</div>
+			<div class="text-base font-light lg:text-lg">{@html post.html}</div>
 		</div>
 	</div>
 {/if}
