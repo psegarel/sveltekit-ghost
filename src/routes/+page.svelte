@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import { contentApi } from '$lib/ghost';
+	import type { PageData } from './$types';
+	export let data: PageData;
+
+	import Hero from '$lib/components/Hero.svelte';
+</script>
+
+<Hero settings={data.settings} />
