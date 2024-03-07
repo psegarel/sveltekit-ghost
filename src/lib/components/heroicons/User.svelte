@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let classname = 'w-6 h-6';
+	export let classname = 'size-6';
 </script>
 
 <svg

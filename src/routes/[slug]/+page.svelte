@@ -14,7 +14,7 @@
 		<div class="flex flex-col gap-8 p-4 py-32 lg:w-3/5">
 			<h1 class="text-xl font-bold lg:text-4xl">{post.title}</h1>
 			<div class="flex flex-row gap-4">
-				<User classname="w-12 h-12 border rounded-full bg-zinc-200 text-white p-1" />
+				<User classname="size-12 border rounded-full bg-zinc-200 text-white p-1" />
 				<div>
 					{#if post.authors}
 						<h4 class="text-sm font-semibold lg:text-xl">{post.authors[0].name}</h4>
