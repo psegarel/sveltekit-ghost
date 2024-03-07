@@ -23,7 +23,7 @@ VITE_SECRET_GHOST_ADMIN_API_KEY=[Admin API Key]
 ```
 
 Check the basic implementation, this repo basically 
-[SvelteKit site](https://main--sveltekit-ghost.netlify.app/)
+[SvelteKit site](https://sveltekit-ghost.netlify.app/)
 
 The DigitalPress blog 
 [Ghost Blog](https://sveltekit-ghost.digitalpress.blog/)
